@@ -1,0 +1,85 @@
+/* ExamForm.scss */
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    /* Main content container - takes up 80% of the available width */
+    flex: 4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .navbar {
+  height: 50px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+
+    .top {
+      margin-bottom: 20px;
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    .bottom {
+      flex-direction: column; /* Adjust for multi-step */
+
+      .right {
+        flex: 1;
+        padding: 20px;
+        background-color: #f0f0f0;
+
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          .formInput {
+            flex: 0 0 calc(50% - 10px); /* Two inputs in a row with spacing */
+            margin-bottom: 20px;
+
+            label {
+              font-weight: bold;
+              margin-bottom: 5px;
+              display: block;
+            }
+
+            input {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            }
+          }
+        }
+
+        .hidden {
+          display: none; /* Hidden class to hide steps */
+        }
+      }
+
+     
+    }
+  }
+}
+}
+
+/* Multi-step form styles */
+.show {
+  display: block;
+}
+.newUserForm{
+  display: flex;
+}
+.btn{
+  margin-left: 10px;
+
+   .save{
+    margin-right: 20px;
+   }
+}

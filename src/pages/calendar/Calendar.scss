@@ -1,0 +1,73 @@
+/* Calendar.scss */
+.list {
+  display: flex;
+}
+
+.listContainer {
+  flex: 4; /* listContainer takes up 4/10 of the available width */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.calender-container {
+  flex: 1; /* Calendar takes up 1/2 of the listContainer */
+  display: flex;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.events-container {
+  flex: 1; /* Events take up 1/2 of the listContainer */
+  display: flex;
+  flex-wrap: wrap; /* Wrap events to the next line if necessary */
+  margin-top: 20px;
+}
+
+.event {
+  width: calc(50% - 10px); /* Each event takes up 50% of the events-container with some space in between */
+  margin-right: 10px;
+}
+
+.event h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  background-color: #53429f;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  width: 200px;
+  height: 50px;
+}
+
+.event p {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+  color: black;
+}
+
+.event-info {
+  display: flex; /* Align heading and paragraph in the same line */
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 24px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rgb(58, 66, 147);
+  margin-bottom: 0;
+}
+
+.events-heading {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 680px;
+  color: rgb(58, 66, 147);
+  margin-top: 20px;
+}
+
+/* You don't need to add any styles for Navbar and Sidebar here. */
+/* The existing styles from their respective components will be applied. */

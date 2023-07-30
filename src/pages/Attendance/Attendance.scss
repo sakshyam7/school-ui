@@ -1,0 +1,25 @@
+.list {
+  width: 100%;
+  .listContainer {
+    flex: 6;
+  }
+}
+.title{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 300;
+  color: gray;
+}
+.chart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500;
+
+
+}
+.featuredChart {
+  width: 250px;
+  height: 250px;
+  
+}
